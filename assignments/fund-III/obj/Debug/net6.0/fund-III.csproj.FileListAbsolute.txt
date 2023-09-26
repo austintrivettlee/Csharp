@@ -1,0 +1,15 @@
+C:\Users\Austin\Documents\Coding Dojo\Csharp\assignments\fund-III\obj\Debug\net6.0\fund-III.csproj.AssemblyReference.cache
+C:\Users\Austin\Documents\Coding Dojo\Csharp\assignments\fund-III\obj\Debug\net6.0\fund-III.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Austin\Documents\Coding Dojo\Csharp\assignments\fund-III\obj\Debug\net6.0\fund-III.AssemblyInfoInputs.cache
+C:\Users\Austin\Documents\Coding Dojo\Csharp\assignments\fund-III\obj\Debug\net6.0\fund-III.AssemblyInfo.cs
+C:\Users\Austin\Documents\Coding Dojo\Csharp\assignments\fund-III\obj\Debug\net6.0\fund-III.csproj.CoreCompileInputs.cache
+C:\Users\Austin\Documents\Coding Dojo\Csharp\assignments\fund-III\bin\Debug\net6.0\fund-III.exe
+C:\Users\Austin\Documents\Coding Dojo\Csharp\assignments\fund-III\bin\Debug\net6.0\fund-III.deps.json
+C:\Users\Austin\Documents\Coding Dojo\Csharp\assignments\fund-III\bin\Debug\net6.0\fund-III.runtimeconfig.json
+C:\Users\Austin\Documents\Coding Dojo\Csharp\assignments\fund-III\bin\Debug\net6.0\fund-III.dll
+C:\Users\Austin\Documents\Coding Dojo\Csharp\assignments\fund-III\bin\Debug\net6.0\fund-III.pdb
+C:\Users\Austin\Documents\Coding Dojo\Csharp\assignments\fund-III\obj\Debug\net6.0\fund-III.dll
+C:\Users\Austin\Documents\Coding Dojo\Csharp\assignments\fund-III\obj\Debug\net6.0\refint\fund-III.dll
+C:\Users\Austin\Documents\Coding Dojo\Csharp\assignments\fund-III\obj\Debug\net6.0\fund-III.pdb
+C:\Users\Austin\Documents\Coding Dojo\Csharp\assignments\fund-III\obj\Debug\net6.0\fund-III.genruntimeconfig.cache
+C:\Users\Austin\Documents\Coding Dojo\Csharp\assignments\fund-III\obj\Debug\net6.0\ref\fund-III.dll
