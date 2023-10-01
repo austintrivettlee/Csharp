@@ -6,7 +6,7 @@
         var bandit = new Enemy("Bandit");
 
 
-        var punch = new Attack("Punch", 10);
+        var punch = new Attack("Punch", 5);
         var throwAttack = new Attack("Throw", 15);
         var fireball = new Attack("Fireball", 20);
 
