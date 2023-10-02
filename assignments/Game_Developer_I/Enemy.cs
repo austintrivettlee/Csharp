@@ -1,13 +1,18 @@
 public class Enemy
 {
     public string Name { get; }
-    public int Health { get; private set; }
+    private int Health = 100;
+    public int _Health
+    {
+        get {return Health;}
+        set {Health = value;}
+    }
+
     public List<Attack> AttackList { get; }
 
     public Enemy(string name)
     {
         Name = name;
-        Health = 100;
         AttackList = new List<Attack>();
     }
 
@@ -30,6 +35,32 @@ public class Enemy
         else
         {
             Console.WriteLine($"The {target.Name} has no health left!");
+        }
+    }
+}
+public class Melee : Enemy
+{
+    public Melee(string name) : base(name)
+    {
+        _Health = 100;
+        AttackList.Add(new Attack("Punch", 20));
+        AttackList.Add(new Attack("Kick", 15));
+        AttackList.Add(new Attack("Throw", 25));
+    }
+
+    public void Rage()
+    {
+        if (_Health > 0)
+        {
+            var random = new Random();
+            var randomIndex = random.Next(AttackList.Count);
+            var selectedAttack = AttackList[randomIndex];
+            var enhancedDamage = selectedAttack.DamageAmount + 10;
+            Console.WriteLine($"{Name} enters rage, performing {selectedAttack.Name} for {enhancedDamage} damage!");
+        }
+        else
+        {
+            Console.WriteLine($"{Name} has no health left to perform a rage attack!");
         }
     }
 }
