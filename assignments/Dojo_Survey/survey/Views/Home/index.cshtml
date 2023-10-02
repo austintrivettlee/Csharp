@@ -1,0 +1,23 @@
+@model SurveyApp.Models.FormModel
+
+<form method="post" action="/Home/Submit">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="Name" required>
+    <br>
+    <label for="dojoLocation">Dojo Location:</label>
+    <select id="dojoLocation" name="DojoLocation" required>
+        <option value="Seattle">Seattle</option>
+        <option value="San Jose">San Jose</option>
+    </select>
+    <br>
+    <label for="favoriteLanguage">Favorite Language:</label>
+    <select id="favoriteLanguage" name="FavoriteLanguage" required>
+        <option value="C#">C#</option>
+        <option value="JavaScript">JavaScript</option>
+    </select>
+    <br>
+    <label for="comment">Comment:</label>
+    <input type="text" id="comment" name="Comment">
+    <br>
+    <button type="submit">Submit</button>
+</form>

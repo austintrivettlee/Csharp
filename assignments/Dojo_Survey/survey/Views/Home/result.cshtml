@@ -1,0 +1,8 @@
+@model SurveyApp.Models.FormModel
+
+<h1>Form Data</h1>
+<p>Name: @Model.Name</p>
+<p>Dojo Location: @Model.DojoLocation</p>
+<p>Favorite Language: @Model.FavoriteLanguage</p>
+<p>Comment: @(Model.Comment != null ? Model.Comment : "No Comment") </p>
+<button onclick="window.location.href='/Home/Index'">Go Back</button>
