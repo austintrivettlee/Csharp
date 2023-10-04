@@ -1,23 +1,25 @@
 @model SurveyApp.Models.FormModel
 
-<form method="post" action="/Home/Submit">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="Name" required>
+<form asp-action="Submit" asp-controller="Home" method="post">
+    <label asp-for="Name"></label>
+    <input asp-for="Name">
+    <span asp-validation-for="Name"></span>
     <br>
-    <label for="dojoLocation">Dojo Location:</label>
-    <select id="dojoLocation" name="DojoLocation" required>
+    <label asp-for="DojoLocation"></label>
+    <select asp-for="DojoLocation">
         <option value="Seattle">Seattle</option>
         <option value="San Jose">San Jose</option>
     </select>
     <br>
-    <label for="favoriteLanguage">Favorite Language:</label>
-    <select id="favoriteLanguage" name="FavoriteLanguage" required>
+    <label asp-for="FavoriteLanguage"></label>
+    <select asp-for="FavoriteLanguage">
         <option value="C#">C#</option>
         <option value="JavaScript">JavaScript</option>
     </select>
     <br>
-    <label for="comment">Comment:</label>
-    <input type="text" id="comment" name="Comment">
+    <label asp-for="Comment">Comment:</label>
+    <input asp-for="Comment">
+    <span asp-validation-for="Comment"></span>
     <br>
     <button type="submit">Submit</button>
 </form>
