@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h2>Hello @Context.Session.GetString("Username")!</h2>
+
+<p>Current Value: @ViewBag.Value</p>
+
+<form method="post" action="/Home/Operate">
+    <input type="hidden" name="operation" value="increment" />
+    <input type="submit" value="+1" />
+</form>
+<form method="post" action="/Home/Operate">
+    <input type="hidden" name="operation" value="decrement" />
+    <input type="submit" value="-1" />
+</form>
+<form method="post" action="/Home/Operate">
+    <input type="hidden" name="operation" value="double" />
+    <input type="submit" value="x2" />
+</form>
+<form method="post" action="/Home/Operate">
+    <input type="hidden" name="operation" value="random" />
+    <input type="submit" value="+ Random" />
+</form>
+
+
+<form method="post" action="/Home/Logout">
+    <input type="submit" value="Logout" />
+</form>

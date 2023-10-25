@@ -1,5 +1,5 @@
 ﻿int[] numArray = new int[5];
-int[] firstArray = {1,2,3,4,5};
+int[] firstArray = {0,1,2,3,4,5,6,7,8,9};
 
 for (int i = 0; i < firstArray.Length; i++)
 {
@@ -33,7 +33,7 @@ List<string> iceCreamFlav = new List<string> {"Mint", "Vanilla", "Chocolate", "S
 Console.WriteLine(iceCreamFlav.Count);
 Console.WriteLine(iceCreamFlav[2]);
 
-iceCreamFlav.RemoveAt(0);
+iceCreamFlav.RemoveAt(2);
 Console.WriteLine("----------------------");
 
 for (int i = 0; i < iceCreamFlav.Count; i++)

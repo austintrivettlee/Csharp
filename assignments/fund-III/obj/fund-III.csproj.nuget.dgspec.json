@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Austin\\Documents\\Coding Dojo\\Csharp\\assignments\\fund-III\\fund-III.csproj": {}
+    "C:\\Users\\Austin Lee\\Documents\\GitHub\\Csharp\\assignments\\fund-III\\fund-III.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Austin\\Documents\\Coding Dojo\\Csharp\\assignments\\fund-III\\fund-III.csproj": {
+    "C:\\Users\\Austin Lee\\Documents\\GitHub\\Csharp\\assignments\\fund-III\\fund-III.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Austin\\Documents\\Coding Dojo\\Csharp\\assignments\\fund-III\\fund-III.csproj",
+        "projectUniqueName": "C:\\Users\\Austin Lee\\Documents\\GitHub\\Csharp\\assignments\\fund-III\\fund-III.csproj",
         "projectName": "fund-III",
-        "projectPath": "C:\\Users\\Austin\\Documents\\Coding Dojo\\Csharp\\assignments\\fund-III\\fund-III.csproj",
-        "packagesPath": "C:\\Users\\Austin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Austin\\Documents\\Coding Dojo\\Csharp\\assignments\\fund-III\\obj\\",
+        "projectPath": "C:\\Users\\Austin Lee\\Documents\\GitHub\\Csharp\\assignments\\fund-III\\fund-III.csproj",
+        "packagesPath": "C:\\Users\\Austin Lee\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Austin Lee\\Documents\\GitHub\\Csharp\\assignments\\fund-III\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Austin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Austin Lee\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.414\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.415\\RuntimeIdentifierGraph.json"
         }
       }
     }

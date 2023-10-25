@@ -115,3 +115,26 @@ Console.WriteLine(FindKey(TestDict, "RealName"));
 // This should print false
 Console.WriteLine(FindKey(TestDict, "Name"));
 
+
+static Dictionary<string, int> GenerateDictionary(List<string> Names, List<int> Numbers)
+{
+
+    Dictionary<string, int> Dict = new Dictionary<string, int>();
+
+    for (int i = 0; i < Names.Count; i++)
+    {
+        Dict[Names[i]] = Numbers[i];
+    }
+    foreach (var key in Dict.Keys)
+    {
+        Console.WriteLine($"Key: {key} || Value: {Dict[key]}");
+    }
+
+    return Dict;
+}
+
+List<string> names = new List<string> { "Julie", "Harold", "James", "Monica" };
+List<int> numbers = new List<int> { 6, 12, 7, 10 };
+GenerateDictionary(names, numbers);
+
+

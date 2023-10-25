@@ -1,28 +1,20 @@
 ﻿class Game
 {
-    static void Main(string[] args)
-    {
-        Melee Barbarian = new Melee("Barbarian");
-        Ranged Ranger = new Ranged("Ranger");
-        Magic Wizard = new Magic("Wizard");
+    static void Main()
+        {
+        var bandit = new Enemy("Bandit");
 
-        Attack kick = Barbarian.AttackList.Find(attack => attack.Name == "Kick");
-        Barbarian.PerformAttack(Ranger, kick);
+        var punch = new Attack("Punch", 10);
+        var throwAttack = new Attack("Throw", 15);
+        var fireball = new Attack("Fireball", 20);
 
-        Barbarian.Rage(Wizard);
+        bandit.AttackList.Add(punch);
+        bandit.AttackList.Add(throwAttack);
+        bandit.AttackList.Add(fireball);
 
-        Attack shootArrow = Ranger.AttackList.Find(attack => attack.Name == "Shoot an Arrow");
-        Ranger.PerformAttack(Barbarian, shootArrow);
-
-        Ranger.Dash();
-
-        Ranger.PerformAttack(Barbarian, shootArrow);
-
-        Attack fireball = Wizard.AttackList.Find(attack => attack.Name == "Fireball");
-        Wizard.PerformAttack(Barbarian, fireball);
-
-        Wizard.Heal(Ranger);
-
-        Wizard.Heal(Wizard);
+        for (int i = 0; i < 5; i++)
+        {
+            bandit.RandomAttack();
+        }
     }
 }
