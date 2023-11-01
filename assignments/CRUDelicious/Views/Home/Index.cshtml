@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Dish
+
+@foreach(Dish d in ViewBag.AllDishes)
+{
+    <p>The Dish is @d.Name and the chef is @d.Chef</p>
+}
