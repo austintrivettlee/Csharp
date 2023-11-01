@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Austin\\.nuget\\packages\\": {}
+    "C:\\Users\\Austin Lee\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Austin\\Documents\\Coding Dojo\\Csharp\\assignments\\FirstCS\\FirstCSharp\\FirstCSharp.csproj",
+      "projectUniqueName": "C:\\Users\\Austin Lee\\Documents\\GitHub\\Csharp\\assignments\\FirstCS\\FirstCSharp\\FirstCSharp.csproj",
       "projectName": "FirstCSharp",
-      "projectPath": "C:\\Users\\Austin\\Documents\\Coding Dojo\\Csharp\\assignments\\FirstCS\\FirstCSharp\\FirstCSharp.csproj",
-      "packagesPath": "C:\\Users\\Austin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Austin\\Documents\\Coding Dojo\\Csharp\\assignments\\FirstCS\\FirstCSharp\\obj\\",
+      "projectPath": "C:\\Users\\Austin Lee\\Documents\\GitHub\\Csharp\\assignments\\FirstCS\\FirstCSharp\\FirstCSharp.csproj",
+      "packagesPath": "C:\\Users\\Austin Lee\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Austin Lee\\Documents\\GitHub\\Csharp\\assignments\\FirstCS\\FirstCSharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Austin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Austin Lee\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.414\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.415\\RuntimeIdentifierGraph.json"
       }
     }
   }
