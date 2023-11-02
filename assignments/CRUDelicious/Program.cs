@@ -2,8 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using CRUDelicious.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddControllersWithViews();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<MyContext>(options =>
 {

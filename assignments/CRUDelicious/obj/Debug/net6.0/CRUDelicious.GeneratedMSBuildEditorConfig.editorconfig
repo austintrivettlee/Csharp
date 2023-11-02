@@ -15,6 +15,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Austin Lee\Documents\GitHub\Csharp\assignments\CRUDelicious
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Austin Lee/Documents/GitHub/Csharp/assignments/CRUDelicious/Views/Dish/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Austin Lee/Documents/GitHub/Csharp/assignments/CRUDelicious/Views/Dish/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Austin Lee/Documents/GitHub/Csharp/assignments/CRUDelicious/Views/Dish/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzaFxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Austin Lee/Documents/GitHub/Csharp/assignments/CRUDelicious/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,16 @@
+@model Dish
+
+<h1>@Model.Name</h1>
+
+<h2>Chef: @Model.Chef</h2>
+<h3>Tastiness: @Model.Tastiness</h3>
+<h4>Calories: @Model.Calories</h4>
+<p>Description: @Model.Description</p>
+
+<div class="d-flex gap-1">
+    <a class="btn btn-secondary" asp-action="DishEdit" asp-route-id="@Model.DishId" asp-controller="Dish">Edit</a>
+
+    <form asp-action="DishDelete" asp-controller="Dish" method="post" asp-route-id="@Model.DishId">
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+</div>

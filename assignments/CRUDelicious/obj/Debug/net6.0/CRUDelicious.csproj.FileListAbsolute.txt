@@ -33,3 +33,9 @@ C:\Users\Austin Lee\Documents\GitHub\Csharp\assignments\CRUDelicious\obj\Debug\n
 C:\Users\Austin Lee\Documents\GitHub\Csharp\assignments\CRUDelicious\obj\Debug\net6.0\CRUDelicious.pdb
 C:\Users\Austin Lee\Documents\GitHub\Csharp\assignments\CRUDelicious\obj\Debug\net6.0\CRUDelicious.genruntimeconfig.cache
 C:\Users\Austin Lee\Documents\GitHub\Csharp\assignments\CRUDelicious\obj\Debug\net6.0\ref\CRUDelicious.dll
+C:\Users\Austin Lee\Documents\GitHub\Csharp\assignments\CRUDelicious\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Austin Lee\Documents\GitHub\Csharp\assignments\CRUDelicious\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Austin Lee\Documents\GitHub\Csharp\assignments\CRUDelicious\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Austin Lee\Documents\GitHub\Csharp\assignments\CRUDelicious\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Austin Lee\Documents\GitHub\Csharp\assignments\CRUDelicious\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Austin Lee\Documents\GitHub\Csharp\assignments\CRUDelicious\bin\Debug\net6.0\System.Security.Permissions.dll

@@ -1,6 +1,9 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using CRUDelicious.Models;
+using System.Collections.Generic;
+using Microsoft.Extensions.Logging;
+using System.Linq;
 
 namespace CRUDelicious.Controllers;
 
@@ -18,27 +21,8 @@ public class HomeController : Controller
     [HttpGet("")]
     public IActionResult Index()
     {
-        ViewBag.AllDishes = _context.Dishes.ToList();
-        return View();
+        List<Dish> AllDishes = _context.Dishes.ToList();
+        return View("Index", AllDishes);
     }
-    public IActionResult Privacy()
-    {
-        return View();
+    
     }
-
-    [HttpPost("dishes/create")]
-    public IActionResult CreateDish(Dish newDish)
-    {
-        if (ModelState.IsValid)
-        {
-            _context.Add(newDish);
-            _context.SaveChanges();
-            return RedirectToAction("SomeAction");
-        }
-        else
-        {
-            return View("Index");
-        }
-    }
-
-}
