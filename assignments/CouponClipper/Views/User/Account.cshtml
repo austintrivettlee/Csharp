@@ -1,0 +1,9 @@
+@model MyViewModel
+
+<h1>Account Information</h1>
+
+<h2>Username: @Model.User.Username</h2>
+<h2>Email: @Model.User.Email</h2>
+<h2>Coupons Posted: @Model.User.CouponsCreated.Count</h2>
+<h2># of Coupons you used: @Model.CouponsUsedCount</h2>
+<h2># of Coupons that have been used: @Model.MyUsedCoupons</h2>

@@ -1,0 +1,44 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<Dish>
+
+<h1 class="text-center">Welcome To Chefs N' Dishes</h1>
+<hr>
+
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th>Dish</th>
+            <th>Chef</th>
+            <th>Tastiness</th>
+            <th>Calories</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (Dish d in Model)
+            {
+                <tr>
+                    <td>@d.Name</td>
+                    <td>@d.Creator.LastName, @d.Creator.FirstName </td>
+                    <td>@d.Tastiness</td>
+                    <td>@d.Calories</td>
+                    <td>@d.Description</td>
+                    <td>
+                        <div class="d-flex gap-1 justify-content-center">
+                        <a class="btn btn-primary" asp-action="DishView" asp-controller="Dish" asp-route-id="@d.DishId">View</a>
+                        <a class="btn btn-secondary" asp-action="DishEdit" asp-route-id="@d.DishId"
+                            asp-controller="Dish">Edit</a>
+                        <form asp-action="DishDelete" asp-controller="Dish" method="post" asp-route-id="@d.DishId">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

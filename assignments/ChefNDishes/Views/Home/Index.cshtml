@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<Chef>
+
+<h1 class="text-center">Welcome To Chefs N' Dishes</h1>
+<hr>
+
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>DOB</th>
+            <th># of Dishes</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (Chef c in Model)
+            {
+                <tr>
+                    <td>@c.FirstName</td>
+                    <td>@c.LastName</td>
+                    <td>@(DateTime.Today.Year - c.DOB.Year)</td>
+                    <td>@c.AllDishes.Count()</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

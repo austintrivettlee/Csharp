@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<Coupon>
+
+<h1 class="text-center">Welcome To Coupon Clipper</h1>
+<hr>
+
+
+@{
+    foreach (Coupon c in Model)
+    {
+        <div class="card justify-content-center d-flex" style="width: 18rem;">
+            <div class="justify-content-center text-center mt-2">
+
+
+                <h4 class="justify-content-center">@c.CouponCode</h4>
+                <h6>@c.Description</h6>
+                @{
+                    if (c.UserId == Context.Session.GetInt32("UserId"))
+                    {
+                        <p>You Posted This!</p>
+                    }
+                    else if (c.Users.Any(a => a.UserId == Context.Session.GetInt32("UserId")))
+                    {
+                        <p>You Used This.</p>
+                    }
+                    else
+                    {
+                        <form asp-action="UseCoupon" asp-controller="Coupon" method="post" asp-route-id="@c.CouponId">
+                            <button type="submit" class="btn btn-primary">Use This Coupon</button>
+                        </form>
+                    }
+                }
+                <p>@c.Users.Count Peope have used this Coupon.</p>
+
+                <p>Posted by: @c.Creator.Username</p>
+            </div>
+        </div>
+    }
+}

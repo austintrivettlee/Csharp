@@ -1,0 +1,57 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<Wedding>
+
+<h1 class="text-center">Welcome To My Wedding Planner</h1>
+<hr>
+
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th>Wedding Of</th>
+            <th>Date</th>
+            <th>Guest Count</th>
+            <th>Action</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (Wedding w in Model)
+            {
+                <tr>
+                    <td><a asp-action="View" asp-controller="Wedding" asp-route-id="@w.WeddingId">@w.WedderOne & @w.WedderTwo</a></td>
+                    <td>@w.Date.Day / @w.Date.Month / @w.Date.Year </td>
+                    <td>@w.Attendees.Count.ToString()</td>
+                    <td>
+                        <div class="d-flex gap-1 justify-content-center">
+
+                            @{
+                                if (w.UserId == Context.Session.GetInt32("UserId"))
+                                {
+                                    <form asp-action="WeddingDelete" asp-controller="Wedding" method="post" asp-route-id="@w.WeddingId">
+                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                    </form>
+                                }
+                                else if (w.Attendees.Any(a => a.UserId == Context.Session.GetInt32("UserId")))
+                                {
+                                    <form asp-action="UNRSVP" asp-controller="Wedding" method="post" asp-route-id="@w.WeddingId">
+                                        <button type="submit" class="btn btn-primary">UNRSVP</button>
+                                    </form>
+                                }
+                                else 
+                                {
+                                    <form asp-action="RSVP" asp-controller="Wedding" method="post" asp-route-id="@w.WeddingId">
+                                        <button type="submit" class="btn btn-primary">RSVP</button>
+                                    </form>
+                                }
+                            }
+
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
